@@ -194,7 +194,7 @@ resume =
                 ]
             , section "PUBLIC PROJECTS"
                 [ sub [ text "Emojilang" ]
-                , details { coursework = [], items = [] }
+                , details { coursework = [], items = [ "An emoji only programming language" ] }
                 , sub [ text "django-single-page-template" ]
                 , details
                     { coursework = []
