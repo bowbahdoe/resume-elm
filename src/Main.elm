@@ -207,28 +207,28 @@ resume =
                     }
                 , div [ css styles.hint ] [ text "(more projects can be found at ", u [] [ text "github.com/bowbahdoe" ], text ")" ]
                 ]
-            ]
-        , section "WORK EXPERIENCE"
-            [ sub [ text "INTUIT: ", date [ text "January 2018 - July 2018" ] ]
-            , position [ text "Software Engineering Coop" ]
-            , details
-                { coursework = []
-                , items =
-                    [ "Designed and prototyped a system for realtime sync of Q/A content between internal and external services using Kinesis and AWS Lambda"
-                    , "Refactored widgets seen by millions of clients daily to a clear functional architecture using React.js and Redux."
-                    , "Implemented and E2E tested a system for soft-realtime publishing of internally generated content to an external service using AWS Lambda and DynamoDB"
-                    ]
-                }
-            , sub [ text "BAY STATE IT, BOSTON, MA: ", date [ text "September 2014 - January 2018" ] ]
-            , position [ text "Programming Consultant " ]
-            , details
-                { coursework = []
-                , items =
-                    [ "Managed code architecture and testing for a realtime network diagnostic service for Shreve, Crump, and Low"
-                    , "Built a credential manager chrome extension for Flagship Pioneering using Node.js and React"
-                    , "Fully implemented unit and integration tests using Mocha for Bay State IT's in-house central database system"
-                    ]
-                }
+            , section "WORK EXPERIENCE"
+                [ sub [ text "INTUIT: ", date [ text "January 2018 - July 2018" ] ]
+                , position [ text "Software Engineering Coop" ]
+                , details
+                    { coursework = []
+                    , items =
+                        [ "Designed and prototyped a system for realtime sync of Q/A content between internal and external services using Kinesis and AWS Lambda"
+                        , "Refactored widgets seen by millions of clients daily to a clear functional architecture using React.js and Redux."
+                        , "Implemented and E2E tested a system for soft-realtime publishing of internally generated content to an external service using AWS Lambda and DynamoDB"
+                        ]
+                    }
+                , sub [ text "BAY STATE IT, BOSTON, MA: ", date [ text "September 2014 - January 2018" ] ]
+                , position [ text "Programming Consultant " ]
+                , details
+                    { coursework = []
+                    , items =
+                        [ "Managed code architecture and testing for a realtime network diagnostic service for Shreve, Crump, and Low"
+                        , "Built a credential manager chrome extension for Flagship Pioneering using Node.js and React"
+                        , "Fully implemented unit and integration tests using Mocha for Bay State IT's in-house central database system"
+                        ]
+                    }
+                ]
             ]
         ]
 
