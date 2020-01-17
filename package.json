@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "elm-live src/Main.elm --start-page=src/index.html -- --output=elm.js"
+  },
+  "devDependencies": {
+    "elm-live": "^4.0.1"
+  }
+}
