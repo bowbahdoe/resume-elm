@@ -185,7 +185,7 @@ resume =
                         , "Mocha, py.test, and JUnit for unit testing"
                         , "MySql, Apache Cassandra, and DynamoDB databases"
                         , "React.js and Elm for building user interfaces"
-                        , "Pandas, SciPy, and Jupyter for Data Science"
+                        , "Pandas, SciPy, and Jupyter for data science"
                         ]
                     }
                 ]
