@@ -152,8 +152,7 @@ resume =
         [ header { name = "Ethan McCue", info = """mccue.et@husky.neu.edu
                                                    481 Washington St.
                                                    Pembroke, MA 02359
-                                                   781-588-2411
-                                                   Available Jan-June 2019""" }
+                                                   781-588-2411""" }
         , content
             [ section "Education"
                 [ sub
@@ -163,59 +162,57 @@ resume =
                 , details
                     { items =
                         [ "College of Computer and Information Science"
-                        , "Candidate for a Bachelor of Science in Computer Science & Physics; expected May 2020"
-                        , "GPA: 3.494/4.0"
+                        , "B.S. Computer Science & Physics, Minor in Mathematics"
                         ]
                     , coursework =
-                        [ "Algorithms (MS)"
+                        [ "Algorithms"
                         , "Object Oriented Development"
-                        , "Logic and Computation"
+                        , "Artificial Intelligence"
                         , "Theory of Computation"
-                        , "Modern Physics"
-                        , "Electronics"
-                        , "Calculus III"
+                        , "Quantum Mechanics"
+                        , "Thermodynamics & Statistical Mechanics"
                         ]
                     }
                 ]
             , section "TECHNICAL SKILLS"
                 [ sub [ text "PROGRAMMING LANGUAGES" ]
-                , details { coursework = [], items = [ "Python, Javascript, Clojure, Rust, Elm, Java" ] }
+                , details { coursework = [], items = [ "Clojure, Python, Javascript, Rust, Elm, Scala, Java" ] }
                 , sub [ text "PLATFORMS AND TOOLS:" ]
                 , details
                     { coursework = []
                     , items =
-                        [ "Django, Flask, Express.js, and Ring for web development"
+                        [ "Django, Flask, Rails, and Express.js for web development"
                         , "Mocha, py.test, and JUnit for unit testing"
-                        , "React.js and Reagent for building user interfaces"
-                        , "NumPy, SciPy, and Matplotlib numerical libraries"
-                        , "Clojure, Immutables.js, and vavr for functional programming"
+                        , "MySql, Apache Cassandra, and DynamoDB databases"
+                        , "React.js and Elm for building user interfaces"
+                        , "Pandas, SciPy, and Jupyter for Data Science"
                         ]
                     }
                 ]
-            , section "PUBLIC PROJECTS"
-                [ sub [ text "Emojilang" ]
-                , details { coursework = [], items = [ "An emoji only programming language" ] }
-                , sub [ text "django-single-page-template" ]
-                , details
-                    { coursework = []
-                    , items = [ "A reusable template for making django apps with UIs rendered in Javascript." ]
-                    }
-                , sub [ text "Blogger" ]
-                , details
-                    { coursework = []
-                    , items = [ "Microservice for serving blog posts that are written in Markdown." ]
-                    }
-                , div [ css styles.hint ] [ text "(more projects can be found at ", u [] [ text "github.com/bowbahdoe" ], text ")" ]
-                ]
             , section "WORK EXPERIENCE"
-                [ sub [ text "INTUIT: ", date [ text "January 2018 - July 2018" ] ]
+                [ sub [ text "FACEBOOK: ", date [ text "Jun. 2019 - Sept. 2019" ] ]
+                , position [ text "Software Engineering Intern" ]
+                , details
+                    { coursework = []
+                    , items =
+                        [ "Implemented Edge Metadata tracking for internal Data Lineage systems that power Clear History."
+                        , "Wrote and E2E tested code that reliably ingests millions of rows of data into multiple MySql shards in realtime."
+                        , "Added monitoring hooks and designed dashboards and alerts for internal systems."
+                        ]
+                    }
+                , sub [ text "INTUIT: ", date [ text "Jan. 2018 - July 2018, Jan. 2019 - June 2019" ] ]
                 , position [ text "Software Engineering Coop" ]
                 , details
                     { coursework = []
                     , items =
-                        [ "Designed and prototyped a system for realtime sync of Q/A content between internal and external services using Kinesis and AWS Lambda"
+                        [ -- Data Products
+                          "Conducted in depth data analysis to direct business priorities using Python, Scala and Apache Spark."
+                        , "Worked directly with department leadership to determine long term viability of multiple experimental projects."
+                        , "Planned and deployed infrastructure to facilitate an ElasticSearch Schema migration."
+                        , -- Self Help
+                          "Designed and prototyped a system for realtime sync of Q/A content between internal and external services using Kinesis and AWS Lambda."
                         , "Refactored widgets seen by millions of clients daily to a clear functional architecture using React.js and Redux."
-                        , "Implemented and E2E tested a system for soft-realtime publishing of internally generated content to an external service using AWS Lambda and DynamoDB"
+                        , "Implemented and E2E tested a system for soft-realtime publishing of internally generated content to an external service using AWS Lambda and DynamoDB."
                         ]
                     }
                 , sub [ text "BAY STATE IT, BOSTON, MA: ", date [ text "September 2014 - January 2018" ] ]
