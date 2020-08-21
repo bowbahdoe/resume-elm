@@ -60,7 +60,7 @@ styles =
         }
     , details =
         { list =
-            [ fontSize (px 16)
+            [ fontSize (px 15)
             , paddingLeft (px 20)
             , margin4 (px 5) (px 0) (px 7) (px 5) -- mark: maybe bigger gap
             ]
@@ -149,7 +149,7 @@ content children =
 
 resume =
     div [ css styles.container ]
-        [ header { name = "Ethan McCue", info = """emccue@live.com
+        [ header { name = "Ethan McCue", info = """ethan@mccue.dev
                                                    481 Washington St.
                                                    Pembroke, MA 02359
                                                    781-588-2411""" }
@@ -182,10 +182,9 @@ resume =
                     { coursework = []
                     , items =
                         [ "Django, Flask, Rails, and Express.js for web development"
-                        , "Mocha, py.test, and JUnit for unit testing"
-                        , "MySql, Apache Cassandra, and DynamoDB databases"
+                        , "Postgresql, MySql, Apache Cassandra, MongoDB, and DynamoDB databases"
                         , "React.js and Elm for building user interfaces"
-                        , "Pandas, SciPy, and Jupyter for data science"
+                        , "Pandas, SciPy, and Spark for data science"
                         ]
                     }
                 ]
@@ -213,6 +212,16 @@ resume =
                           "Designed and prototyped a system for realtime sync of Q/A content between internal and external services using Kinesis and AWS Lambda."
                         , "Refactored widgets seen by millions of clients daily to a clear functional architecture using React.js and Redux."
                         , "Implemented and E2E tested a system for soft-realtime publishing of internally generated content to an external service using AWS Lambda and DynamoDB."
+                        ]
+                    }
+                , sub [ text "BAY STATE IT: ", date [ text "Sept. 2014 - Jan. 2018" ] ]
+                , position [ text "Programming Consultant" ]
+                , details
+                    { coursework = []
+                    , items =
+                        [ "Managed code architecture and testing for a realtime network diagnostic service for Shreve, Crump, and Low"
+                        , "Built a credential manager chrome extension for Flagship Pioneering using Node.js and React"
+                        , "Fully implemented unit and integration tests using Mocha for Bay State IT's in-house central database system"
                         ]
                     }
                 ]
